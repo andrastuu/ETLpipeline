@@ -1,40 +1,46 @@
-# BrokerChooser ETL Pipeline
+#  ETL Pipeline
 
 ## 📌 Overview
-This project is a modular, cloud-ready **ETL pipeline** built for BrokerChooser as part of a data engineering assessment. The goal was to build a robust, scalable, and easily testable data pipeline that can unify internal user conversion data with broker data for more effective product analysis and decision-making.
+This project is a modular, cloud-ready **ETL pipeline** built as part of a data engineering assessment. The goal was to build a robust, scalable, and easily testable data pipeline that can unify internal user conversion data with broker data for more effective product analysis and decision-making.
 
 ---
 
 ## 🛠 Stack & Architecture
 
-| Component         | Purpose                                                                      |
-|------------------|-------------------------------------------------------------------------------|
-| **Python**        | Core scripting language for ETL logic                                         |
-| **Airflow**       | Orchestrates the DAG (extract → transform → load → profile) with visibility   |
-| **Docker**        | Isolates the environment for local development and future CI/CD portability   |
-| **S3**            | Serves as a scalable, cloud-native destination for final datasets             |
-| **SQLite**        | Simple local database format for lightweight querying                         |
+| Component           | Purpose                                                                      |
+|--------------------|-------------------------------------------------------------------------------|
+| **Python**          | Core scripting language for ETL logic                                         |
+| **Airflow**         | Orchestrates the DAG (extract → transform → load → profile) with visibility   |
+| **Docker**          | Isolates the environment for local development and future CI/CD portability   |
+| **S3**              | Serves as a scalable, cloud-native destination for final datasets             |
+| **SQLite**          | Simple local database format for lightweight querying                         |
 | **YData Profiling** | Fast, automated exploratory data analysis                                     |
-| **Pytest**        | Unit testing to validate transformations and data integrity                   |
+| **Pytest**          | Unit testing to validate transformations and data integrity                   |
 
 ---
 
 ## 🔄 ETL Flow Diagram
 
 ![ETL Flow Diagram](flowchart.drawio.png)
+
 ---
 
 ## 📊 Pipeline Breakdown
 
 ### 1. **Extract**
 - Ingests CSV files using patterns to support batch loads.
-- Normalizes date formats and delimiter types.
+- Normalizes date formats and delimiter types (semicolon or comma).
+- Loads a category mapping CSV and region mapping YAML.
 - Ensures critical columns are present before proceeding.
 
 ### 2. **Transform**
 - Cleans and harmonizes country names using a YAML-based mapping.
-- Matches broker data to user conversions by timestamp proximity.
-- Categorizes unmatched records and exports diagnostics for investigation.
+- Maps UI event categories using a `page_category_mapping.csv` file.
+  - Adds a `was_matched` flag indicating whether a conversion matched broker data.
+- Matches broker data to user conversions using timestamp proximity within a configurable tolerance.
+- Exported data includes full match results and a profiling-ready format.
+  - Exports unmatched rows to a separate file for investigation.
+- All transformations are tested and validated using Pytest and Pandera.
 
 ### 3. **Load**
 - Saves output to:
@@ -45,6 +51,7 @@ This project is a modular, cloud-ready **ETL pipeline** built for BrokerChooser 
 ### 4. **Profile**
 - Uses YData Profiling to generate an interactive HTML report.
 - Helps quickly identify missing data, distributions, and correlation patterns.
+- Used for initial EDA and ongoing pipeline quality control.
 
 ---
 
@@ -52,7 +59,7 @@ This project is a modular, cloud-ready **ETL pipeline** built for BrokerChooser 
 
 This pipeline is designed to be modular and portable. Each stage can be scaled independently, whether for more compute power, batch frequency, or output destinations.
 
-### 🧩 Modular Design Benefits
+### 🧹 Modular Design Benefits
 - Tasks can be re-ordered, removed, or triggered independently.
 - Suitable for extension into event-driven or micro-batch processing.
 
@@ -79,23 +86,7 @@ When deployed using Amazon MWAA (Managed Airflow):
 | Hourly        | ~30 hours      | $60–100                               |
 | Event-based   | Varies         | Lower (with Lambda or Step Functions) |
 
-> If cost is a concern, consider moving smaller steps (e.g. load or profiling) to AWS Lambda functions or even AWS Glue jobs for more cost efficiency.
-
----
-
-## 🤔 Addressing Common Engineering Questions
-
-**Q1: What if the schema changes unexpectedly?**  
-The pipeline uses defensive programming and schema validation via Pytest. In production, Great Expectations or Pandera could be added to enforce schema contracts and flag drift.
-
-**Q2: Can this scale to millions of rows per day?**  
-Yes. The pipeline is modular, and all data operations can be rewritten using Dask or Spark if needed. The current batch pipeline handles mid-volume data comfortably.
-
-**Q3: What happens if a task fails?**  
-Airflow logs detailed tracebacks and supports retries, alerts, and SLA monitoring. Each task is wrapped in try/except for debugging. Email or Slack alerts can be easily added.
-
-**Q4: Is it secure to store AWS credentials in a file?**  
-For demo purposes, `aws.env` is used. In production, credentials should be injected securely via IAM roles, AWS Secrets Manager, or environment bindings in CI/CD.
+> Disclaimer: Moving smaller steps (e.g. load or profiling) to AWS Lambda functions or even AWS Glue jobs can have better cost efficiency.
 
 ---
 
@@ -114,6 +105,7 @@ Run the DAG manually or on a schedule
 
 Outputs:
 - `output/final_output.csv`
+- `output/unmatched_conversions.csv`
 - `output/matched_data.sqlite`
 - `output/profiling_report.html`
 - S3 upload to: `s3://<bucket>/matched_data.csv`
@@ -143,13 +135,14 @@ brokerchooser-etl/
 ---
 
 ## 🧠 Why These Tools?
-| Tool             | Reason                                                                 |
-|------------------|------------------------------------------------------------------------|
-| **Airflow**       | Flexible, production-ready orchestration with dependency handling     |
-| **Docker**        | Makes local testing and cloud migration seamless                      |
-| **S3**            | Cheap, durable cloud storage with API access                          |
+| Tool               | Reason                                                                 |
+|--------------------|------------------------------------------------------------------------|
+| **Airflow**         | Flexible, production-ready orchestration with dependency handling     |
+| **Docker**          | Makes local testing and cloud migration seamless                      |
+| **S3**              | Cheap, durable cloud storage with API access                          |
 | **YData Profiling** | Saves hours of manual data exploration                               |
-| **Pytest**        | Prevents silent errors by checking assumptions on input/output data   |
+| **Pytest**          | Prevents silent errors by checking assumptions on input/output data   |
+| **Pandera**         | Provides runtime schema validation to enforce structure + datatypes   |
 
 ---
 
@@ -157,14 +150,8 @@ brokerchooser-etl/
 
 This project delivers a modular, testable, and cloud-adaptable pipeline suitable for production with minimal adjustments. Each component is isolated for clarity, and the whole system is compatible with modern orchestration and CI/CD pipelines.
 
-**Next Steps:**
-- Optionally integrate with AWS Lambda for serverless triggers
-- Add CI to automatically run Pytest and DAG checks on commits
-- Monitor costs more granularly using CloudWatch if deployed on AWS
-
 ---
 
-**Author**: Andras Tuu 
+**Author**: Andras Tuu  
 **Date**: April 2025  
 **Contact**: www.linkedin.com/in/andrás-tűű-99a0b61bb
-
