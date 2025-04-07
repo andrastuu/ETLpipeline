@@ -7,40 +7,40 @@ This project is a modular, cloud-ready **ETL pipeline** built as part of a data 
 
 ## 🛠 Stack & Architecture
 
-| Component         | Purpose                                                                      |
-|------------------|-------------------------------------------------------------------------------|
-| **Python**        | Core scripting language for ETL logic                                         |
-| **Airflow**       | Orchestrates the DAG (extract → transform → load → profile) with visibility   |
-| **Docker**        | Isolates the environment for local development and future CI/CD portability   |
-| **S3**            | Serves as a scalable, cloud-native destination for final datasets             |
-| **SQLite**        | Simple local database format for lightweight querying                         |
+| Component           | Purpose                                                                      |
+|--------------------|-------------------------------------------------------------------------------|
+| **Python**          | Core scripting language for ETL logic                                         |
+| **Airflow**         | Orchestrates the DAG (extract → transform → load → profile) with visibility   |
+| **Docker**          | Isolates the environment for local development and future CI/CD portability   |
+| **S3**              | Serves as a scalable, cloud-native destination for final datasets             |
+| **SQLite**          | Simple local database format for lightweight querying                         |
 | **YData Profiling** | Fast, automated exploratory data analysis                                     |
-| **Pytest**        | Unit testing to validate transformations and data integrity                   |
+| **Pytest**          | Unit testing to validate transformations and data integrity                   |
 
 ---
 
 ## 🔄 ETL Flow Diagram
 
 ![ETL Flow Diagram](flowchart.drawio.png)
+
 ---
 
 ## 📊 Pipeline Breakdown
 
 ### 1. **Extract**
 - Ingests CSV files using patterns to support batch loads.
-- Normalizes date formats and delimiter types.
+- Normalizes date formats and delimiter types (semicolon or comma).
+- Loads a category mapping CSV and region mapping YAML.
 - Ensures critical columns are present before proceeding.
 
 ### 2. **Transform**
 - Cleans and harmonizes country names using a YAML-based mapping.
-- Matches broker data to user conversions using a combination of timestamp proximity and optional country filters.
-- The pipeline performs the following steps:
-  - For each user conversion, it identifies the closest broker record in time using absolute timestamp difference.
-  - Country harmonization ensures alignment between internal and external datasets.
-  - Matching can consider either country_name vs ip_country or country_residency depending on match quality.
-  - If no close match is found within a defined time window, the record is marked as "unmatched" and logged for diagnostics.
-- All transformations are validated against schema expectations using Pandera, and the logic is covered by Pytest to ensure edge cases are handled reliably.
-- Categorizes unmatched records and exports diagnostics for investigation.
+- Maps UI event categories using a `page_category_mapping.csv` file.
+  - Adds a `was_matched` flag indicating whether a conversion matched broker data.
+- Matches broker data to user conversions using timestamp proximity within a configurable tolerance.
+- Exported data includes full match results and a profiling-ready format.
+  - Exports unmatched rows to a separate file for investigation.
+- All transformations are tested and validated using Pytest and Pandera.
 
 ### 3. **Load**
 - Saves output to:
@@ -51,9 +51,7 @@ This project is a modular, cloud-ready **ETL pipeline** built as part of a data 
 ### 4. **Profile**
 - Uses YData Profiling to generate an interactive HTML report.
 - Helps quickly identify missing data, distributions, and correlation patterns.
-- The pipeline includes defensive programming practices and schema validation using Pandera to ensure data integrity.
-- Transformations are unit tested with Pytest, catching changes early.
-
+- Used for initial EDA and ongoing pipeline quality control.
 
 ---
 
@@ -61,7 +59,7 @@ This project is a modular, cloud-ready **ETL pipeline** built as part of a data 
 
 This pipeline is designed to be modular and portable. Each stage can be scaled independently, whether for more compute power, batch frequency, or output destinations.
 
-### 🧩 Modular Design Benefits
+### 🧹 Modular Design Benefits
 - Tasks can be re-ordered, removed, or triggered independently.
 - Suitable for extension into event-driven or micro-batch processing.
 
@@ -90,7 +88,6 @@ When deployed using Amazon MWAA (Managed Airflow):
 
 > Disclaimer: Moving smaller steps (e.g. load or profiling) to AWS Lambda functions or even AWS Glue jobs can have better cost efficiency.
 
-
 ---
 
 ## ▶️ How to Run It
@@ -108,6 +105,7 @@ Run the DAG manually or on a schedule
 
 Outputs:
 - `output/final_output.csv`
+- `output/unmatched_conversions.csv`
 - `output/matched_data.sqlite`
 - `output/profiling_report.html`
 - S3 upload to: `s3://<bucket>/matched_data.csv`
@@ -137,13 +135,14 @@ brokerchooser-etl/
 ---
 
 ## 🧠 Why These Tools?
-| Tool             | Reason                                                                 |
-|------------------|------------------------------------------------------------------------|
-| **Airflow**       | Flexible, production-ready orchestration with dependency handling     |
-| **Docker**        | Makes local testing and cloud migration seamless                      |
-| **S3**            | Cheap, durable cloud storage with API access                          |
+| Tool               | Reason                                                                 |
+|--------------------|------------------------------------------------------------------------|
+| **Airflow**         | Flexible, production-ready orchestration with dependency handling     |
+| **Docker**          | Makes local testing and cloud migration seamless                      |
+| **S3**              | Cheap, durable cloud storage with API access                          |
 | **YData Profiling** | Saves hours of manual data exploration                               |
-| **Pytest**        | Prevents silent errors by checking assumptions on input/output data   |
+| **Pytest**          | Prevents silent errors by checking assumptions on input/output data   |
+| **Pandera**         | Provides runtime schema validation to enforce structure + datatypes   |
 
 ---
 
@@ -153,7 +152,6 @@ This project delivers a modular, testable, and cloud-adaptable pipeline suitable
 
 ---
 
-**Author**: Andras Tuu 
+**Author**: Andras Tuu  
 **Date**: April 2025  
 **Contact**: www.linkedin.com/in/andrás-tűű-99a0b61bb
-
