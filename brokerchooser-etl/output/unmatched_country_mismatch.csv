@@ -1,0 +1,207 @@
+id,session_id,country_name,is_mobile,ui_element,created_at,measurement_category,timestamp,country_residency,ip_country,important_score,broker_timestamp,country_match,timestamp_within_tolerance
+5370863,70869590,togo,1,interactive-param-table-name-link,2024-04-21 07:32:34,01counpg/02notrel/03notrel,,,,,,False,False
+5370873,70869590,togo,1,dynamic score top broker list row,2024-04-21 07:34:45,01bestca/02notrel/03online,,,,,,False,False
+5371119,73691658,east timor,1,dynamic score top broker list row,2024-04-21 08:28:25,01bestca/02notrel/03online,,,,,,False,False
+5372315,73713942,iran,0,dynamic score top broker list row,2024-04-21 12:34:05,01counpg/02notrel/03notrel,,,,,,False,False
+5377990,73805695,reunion,1,mobile-chapter-2-top5-box,2024-04-22 08:40:32,01safety/02isscam/03notrel,,,,,,False,False
+5378569,72416601,reunion,0,dynamic score top broker list row,2024-04-22 10:22:54,01counpg/02notrel/03notrel,,,,,,False,False
+5379894,73834212,iran,0,dynamic score top broker list row,2024-04-22 14:09:27,01counpg/02notrel/03notrel,,,,,,False,False
+5384607,73899736,reunion,1,popularity-box-whole-row-link,2024-04-23 03:35:26,01bestca/02notrel/03notrel,,,,,,False,False
+5386429,73934640,malawi,1,top2-broker-1,2024-04-23 09:26:45,01educat/02stocks/03buysto,,,,,,False,False
+5386803,73940217,togo,1,fmb broker list item link,2024-04-23 10:32:48,01fmybro/02notrel/03notrel,,,,,,False,False
+5390060,69540121,syria,1,fmb broker list item link,2024-04-23 17:50:23,01fmybro/02notrel/03notrel,,,,,,False,False
+5394657,74063478,malawi,1,dynamic score top broker list row,2024-04-24 08:38:49,01counpg/02notrel/03notrel,,,,,,False,False
+5395354,74075416,togo,1,fmb broker list item link,2024-04-24 10:41:49,01fmybro/02notrel/03notrel,,,,,,False,False
+5395784,74083165,reunion,0,desktop-top5-box,2024-04-24 11:45:03,01safety/02isscam/03notrel,,,,,,False,False
+5399335,74118200,malawi,1,mobile-chapter-2-top5-box,2024-04-24 17:41:16,01educat/02stocks/03buysto,,,,,,False,False
+5399390,74119393,reunion,1,dynamic score top broker list row,2024-04-24 17:53:08,01bestca/02notrel/03notrel,,,,,,False,False
+5404231,74169471,seychelles,0,dynamic score top broker list row,2024-04-25 05:25:41,01counpg/02notrel/03notrel,,,,,,False,False
+5404781,74175378,reunion,1,cb broker cards visit broker button,2024-04-25 07:05:01,01compar/02notrel/03notrel,,,,,,False,False
+5409342,74231155,seychelles,1,broker-name-link,2024-04-25 16:27:16,01bestca/02notrel/03online,,,,,,False,False
+5409547,74235982,reunion,1,dynamic score top broker list row,2024-04-25 17:00:05,01bestca/02notrel/03notrel,,,,,,False,False
+5409876,74243719,malawi,1,broker-name-link,2024-04-25 17:55:12,01counpg/02notrel/03notrel,,,,,,False,False
+5411917,74290037,togo,1,broker-name-link,2024-04-25 23:29:25,01educat/02stocks/03buysto,,,,,,False,False
+5417181,74428698,seychelles,1,dynamic score top broker list row,2024-04-26 16:15:44,01counpg/02notrel/03notrel,,,,,,False,False
+5418050,74449123,malawi,1,fmb broker list item link,2024-04-26 18:45:06,01fmybro/02notrel/03notrel,,,,,,False,False
+5418138,74449123,malawi,1,dynamic score top broker list row,2024-04-26 18:59:47,01counpg/02notrel/03notrel,,,,,,False,False
+5418152,74449123,malawi,1,dynamic score top broker list row,2024-04-26 19:01:30,01counpg/02notrel/03notrel,,,,,,False,False
+5418963,74473182,togo,1,mobile-chapter-2-top5-box,2024-04-26 21:23:07,01counpg/02notrel/03notrel,,,,,,False,False
+5419692,74489647,malawi,1,fmb broker list item link,2024-04-26 23:45:04,01fmybro/02notrel/03notrel,,,,,,False,False
+5420413,74509053,aruba,1,dynamic score top broker list row,2024-04-27 02:42:51,01bestca/02notrel/03online,,,,,,False,False
+5421400,74526989,malawi,1,top2-broker-1,2024-04-27 05:31:06,01educat/02stocks/03buysto,,,,,,False,False
+5423785,74558059,togo,1,fmb broker list item link,2024-04-27 10:37:03,01fmybro/02notrel/03notrel,,,,,,False,False
+5423809,74558579,malawi,1,dynamic score top broker list row,2024-04-27 10:40:56,01counpg/02notrel/03notrel,,,,,,False,False
+5423810,74558579,malawi,1,dynamic score top broker list row,2024-04-27 10:40:58,01counpg/02notrel/03notrel,,,,,,False,False
+5424122,74561723,iran,0,interactive-param-table-name-link,2024-04-27 11:17:29,01bestca/02notrel/03notrel,,,,,,False,False
+5424124,74561723,iran,0,interactive-param-table-name-link,2024-04-27 11:18:09,01bestca/02notrel/03notrel,,,,,,False,False
+5426163,74597424,reunion,1,fmb broker list item link,2024-04-27 16:32:05,01fmybro/02notrel/03notrel,,,,,,False,False
+5426629,74606086,malawi,1,top2-broker-1,2024-04-27 17:44:04,01educat/02stocks/03buysto,,,,,,False,False
+5427433,74621035,reunion,1,fmb broker list item link,2024-04-27 20:04:16,01fmybro/02notrel/03notrel,,,,,,False,False
+5431513,74702572,malawi,1,cb broker cards visit broker button,2024-04-28 10:27:35,01compar/02notrel/03notrel,,,,,,False,False
+5431670,74707607,malawi,1,mobile-chapter-2-top5-box,2024-04-28 10:55:01,01counpg/02notrel/03notrel,,,,,,False,False
+5435642,74774717,togo,1,dynamic score top broker list row,2024-04-28 21:51:32,01counpg/02notrel/03notrel,,,,,,False,False
+5439109,74838160,malawi,1,fmb broker list item link,2024-04-29 09:50:24,01fmybro/02notrel/03notrel,,,,,,False,False
+5439454,74844478,reunion,0,interactive-param-table-name-link,2024-04-29 10:42:02,01counpg/02notrel/03notrel,,,,,,False,False
+5440140,74855815,malawi,1,personal page broker card visit broker button,2024-04-29 12:31:27,01cateme/02notrel/03notrel,,,,,,False,False
+5440287,74859577,malawi,1,personal page broker card visit broker button,2024-04-29 12:55:41,01cateme/02notrel/03notrel,,,,,,False,False
+5441649,74884557,malawi,1,personal page broker card name link,2024-04-29 16:20:23,01cateme/02notrel/03notrel,,,,,,False,False
+5441660,74884557,malawi,1,fmb broker list item link,2024-04-29 16:21:46,01fmybro/02notrel/03notrel,,,,,,False,False
+5441667,74884557,malawi,1,personal page broker card visit broker button,2024-04-29 16:22:22,01cateme/02notrel/03notrel,,,,,,False,False
+5442313,74896330,togo,1,mobile-chapter-2-top5-box,2024-04-29 17:52:32,01educat/02stocks/03buysto,,,,,,False,False
+5442323,74896330,togo,1,mobile-chapter-2-top5-box,2024-04-29 17:53:38,01educat/02stocks/03buysto,,,,,,False,False
+5442849,74446001,syria,1,dynamic score top broker list row,2024-04-29 19:15:30,01bestca/02notrel/03notrel,,,,,,False,False
+5444773,74942035,cuba,0,broker-name-link,2024-04-29 23:59:33,01bestca/02notrel/03notrel,,,,,,False,False
+5449812,75080419,malawi,1,interactive-param-table-name-link,2024-04-30 15:57:38,01educat/02stocks/03buysto,,,,,,False,False
+5451697,75122793,aruba,0,dynamic score top broker list row,2024-04-30 21:01:10,01counpg/02notrel/03notrel,,,,,,False,False
+5456536,75211017,seychelles,0,broker-name-link,2024-05-01 10:39:15,01bestca/02notrel/03online,,,,,,False,False
+5456807,75211017,seychelles,0,dynamic score top broker list row,2024-05-01 11:14:35,01bestca/02notrel/03online,,,,,,False,False
+5456943,75211017,seychelles,0,dynamic score top broker list row,2024-05-01 11:39:13,01bestca/02notrel/03online,,,,,,False,False
+5475252,75257122,reunion,0,dynamic score top broker list row,2024-05-01 18:28:15,01bestca/02notrel/03notrel,,,,,,False,False
+5477453,75298059,iran,1,mobile-chapter-2-top5-box,2024-05-02 01:23:57,01safety/02isscam/03notrel,,,,,,False,False
+5479304,75332715,togo,0,dynamic score top broker list row,2024-05-02 07:59:49,01counpg/02notrel/03notrel,,,,,,False,False
+5483818,75407114,american samoa,0,fmb broker list item link,2024-05-02 20:20:23,01fmybro/02notrel/03notrel,,,,,,False,False
+5484666,75423764,aruba,1,dynamic score top broker list row,2024-05-02 22:57:44,01counpg/02notrel/03notrel,,,,,,False,False
+5486916,75465442,syria,0,,2024-05-03 07:41:46,01homepa/02notrel/03notrel,,,,,,False,False
+5488528,75496068,malawi,1,dynamic score top broker list row,2024-05-03 12:21:29,01counpg/02notrel/03notrel,,,,,,False,False
+5489322,75512043,togo,1,popularity-box-whole-row-link,2024-05-03 14:31:20,01counpg/02notrel/03notrel,,,,,,False,False
+5493854,75608661,togo,0,mobile-chapter-2-top5-box,2024-05-04 04:19:36,01review/02notrel/03review,,,,,,False,False
+5493865,75608661,togo,0,mobile-chapter-6-top5-box,2024-05-04 04:19:37,01review/02notrel/03review,,,,,,False,False
+5493880,75608661,togo,0,desktop-top5-box,2024-05-04 04:19:45,01review/02notrel/03review,,,,,,False,False
+5496342,75656224,malawi,1,dynamic score top broker list row,2024-05-04 10:58:58,01counpg/02notrel/03notrel,,,,,,False,False
+5501530,75745835,togo,1,dynamic score top broker list row,2024-05-05 01:41:31,01counpg/02notrel/03notrel,,,,,,False,False
+5503454,75787253,iran,1,mobile-chapter-2-top5-box,2024-05-05 09:42:53,01bestca/02notrel/03online,,,,,,False,False
+5503536,75789026,iran,1,interactive-param-table-name-link,2024-05-05 09:58:49,01counpg/02notrel/03notrel,,,,,,False,False
+5505646,75833632,togo,1,dynamic score top broker list row,2024-05-05 16:06:39,01bestca/02notrel/03online,,,,,,False,False
+5505874,75837260,iran,0,popularity-box-whole-row-link,2024-05-05 16:45:23,01bestca/02notrel/03online,,,,,,False,False
+5507073,75857047,malawi,1,mobile-chapter-2-top5-box,2024-05-05 19:40:21,01educat/02stocks/03buysto,,,,,,False,False
+5508399,75882493,american samoa,0,desktop-top5-box,2024-05-06 00:00:13,01review/02notrel/03review,,,,,,False,False
+5512741,75952240,malawi,1,mobile-chapter-2-top5-box,2024-05-06 13:30:58,01counpg/02notrel/03notrel,,,,,,False,False
+5513431,75959691,togo,0,fmb broker list item link,2024-05-06 14:54:11,01fmybro/02notrel/03notrel,,,,,,False,False
+5520711,76065577,malawi,0,dynamic score top broker list row,2024-05-07 07:31:36,01bestca/02notrel/03notrel,,,,,,False,False
+5521046,76072476,seychelles,1,mobile-chapter-2-top5-box,2024-05-07 08:18:50,01educat/02stocks/03buysto,,,,,,False,False
+5522782,76096179,syria,1,dynamic score top broker list row,2024-05-07 11:24:03,01counpg/02notrel/03notrel,,,,,,False,False
+5525308,76135509,malawi,1,mobile-chapter-2-top5-box,2024-05-07 16:56:42,01educat/02stocks/03buysto,,,,,,False,False
+5531948,76242076,reunion,1,mobile-chapter-2-top5-box,2024-05-08 11:10:27,01safety/02isscam/03notrel,,,,,,False,False
+5532607,76249955,togo,1,fmb broker list item link,2024-05-08 12:49:21,01fmybro/02notrel/03notrel,,,,,,False,False
+5541976,76344191,malawi,1,mobile-chapter-2-top5-box,2024-05-09 07:01:04,01safety/02isscam/03notrel,,,,,,False,False
+5543972,76357649,iran,0,dynamic score top broker list row,2024-05-09 09:55:12,01bestca/02notrel/03online,,,,,,False,False
+5544491,76362331,malawi,1,personal page broker card visit broker button,2024-05-09 10:52:00,01cateme/02notrel/03notrel,,,,,,False,False
+5544549,76362331,malawi,1,personal page broker card visit broker button,2024-05-09 10:59:24,01cateme/02notrel/03notrel,,,,,,False,False
+5546456,76376799,aruba,1,dynamic score top broker list row,2024-05-09 13:46:29,01bestca/02notrel/03online,,,,,,False,False
+5550452,76411635,malawi,1,interactive-param-table-name-link,2024-05-09 20:54:08,01bestca/02notrel/03notrel,,,,,,False,False
+5550917,76415465,iran,1,dynamic score top broker list row,2024-05-09 21:57:19,01bestca/02notrel/03online,,,,,,False,False
+5554486,76453454,reunion,1,mobile-chapter-2-top5-box,2024-05-10 07:07:09,01safety/02isscam/03notrel,,,,,,False,False
+5557925,76489758,malawi,1,mobile-chapter-2-top5-box,2024-05-10 14:54:43,01educat/02notrel/03notrel,,,,,,False,False
+5558700,76498770,malawi,1,dynamic score top broker list row,2024-05-10 16:41:35,01counpg/02notrel/03notrel,,,,,,False,False
+5561237,76532125,malawi,1,popularity-box-whole-row-link,2024-05-10 22:45:26,01counpg/02notrel/03notrel,,,,,,False,False
+5565123,73563867,reunion,1,mobile-chapter-2-top5-box,2024-05-11 11:32:39,01safety/02isscam/03notrel,,,,,,False,False
+5565793,76620252,cuba,1,broker-chapter-3/summary,2024-05-11 13:29:28,01bestca/02notrel/03notrel,,,,,,False,False
+5567651,76642808,malawi,0,interactive-param-table-name-link,2024-05-11 18:40:58,01educat/02stocks/03buysto,,,,,,False,False
+5570158,76677087,malawi,1,fmb broker list item link,2024-05-12 04:00:49,01fmybro/02notrel/03notrel,,,,,,False,False
+5571339,76692169,iran,0,interactive-param-table-name-link,2024-05-12 08:18:53,01bestca/02notrel/03online,,,,,,False,False
+5571908,76699245,reunion,1,mobile-chapter-2-top5-box,2024-05-12 10:05:52,01safety/02isscam/03notrel,,,,,,False,False
+5572042,76354172,cuba,1,dynamic score top broker list row,2024-05-12 10:31:06,01bestca/02notrel/03notrel,,,,,,False,False
+5572048,76354172,cuba,1,dynamic score top broker list row,2024-05-12 10:31:48,01bestca/02notrel/03notrel,,,,,,False,False
+5573240,76716422,iran,1,dynamic score top broker list row,2024-05-12 14:15:29,01bestca/02notrel/03notrel,,,,,,False,False
+5580539,76798105,syria,1,fmb broker list item link,2024-05-13 13:47:40,01fmybro/02notrel/03notrel,,,,,,False,False
+5583085,76826854,reunion,0,fmb broker list item link,2024-05-13 19:13:46,01fmybro/02notrel/03notrel,,,,,,False,False
+5583099,76826854,reunion,0,compare broker bottom ribbon vbb,2024-05-13 19:15:02,01compar/02notrel/03notrel,,,,,,False,False
+5583657,76834793,iran,1,dynamic score top broker list row,2024-05-13 20:26:58,01bestca/02notrel/03online,,,,,,False,False
+5583658,76834793,iran,1,dynamic score top broker list row,2024-05-13 20:26:59,01bestca/02notrel/03online,,,,,,False,False
+5585710,76855069,togo,1,popularity-box-whole-row-link,2024-05-14 00:16:27,01bestca/02notrel/03online,,,,,,False,False
+5587529,76879167,reunion,1,dynamic score top broker list row,2024-05-14 04:41:00,01counpg/02notrel/03notrel,,,,,,False,False
+5589081,76902930,iran,0,,2024-05-14 08:36:50,01review/02notrel/03review,,,,,,False,False
+5591077,73621178,cuba,1,mobile-chapter-2-top5-box,2024-05-14 13:17:42,01review/02notrel/03stonxx,,,,,,False,False
+5591143,76935546,reunion,1,fmb broker list item link,2024-05-14 13:27:27,01fmybro/02notrel/03notrel,,,,,,False,False
+5592506,76951886,east timor,1,dynamic score top broker list row,2024-05-14 16:14:34,01bestca/02notrel/03online,,,,,,False,False
+5594111,76970213,seychelles,0,desktop-top5-box,2024-05-14 19:31:06,01review/02notrel/03review,,,,,,False,False
+5604642,77090504,malawi,1,mobile-chapter-2-top5-box,2024-05-15 19:03:04,01educat/02stocks/03buysto,,,,,,False,False
+5605986,77080322,togo,1,dynamic score top broker list row,2024-05-15 21:44:05,01bestca/02notrel/03online,,,,,,False,False
+5607705,77130012,seychelles,0,front-page-visit-broker-button,2024-05-16 03:01:44,01homepa/02notrel/03notrel,,,,,,False,False
+5608082,77136697,reunion,1,mobile-chapter-2-top5-box,2024-05-16 04:34:46,01safety/02isscam/03notrel,,,,,,False,False
+5608391,77139481,malawi,1,dynamic score top broker list row,2024-05-16 05:09:02,01counpg/02notrel/03notrel,,,,,,False,False
+5609056,77148213,iran,0,broker-name-link,2024-05-16 07:06:48,01bestca/02notrel/03notrel,,,,,,False,False
+5619463,77291867,malawi,1,top2-header,2024-05-17 08:04:10,01educat/02stocks/03buysto,,,,,,False,False
+5619909,77295009,iran,0,desktop-top5-box,2024-05-17 09:23:42,01safety/02isscam/03notrel,,,,,,False,False
+5620460,77295009,iran,0,interactive-param-table-name-link,2024-05-17 10:39:08,01bestca/02notrel/03online,,,,,,False,False
+5620462,77295009,iran,0,interactive-param-table-name-link,2024-05-17 10:39:16,01bestca/02notrel/03online,,,,,,False,False
+5624354,77362314,reunion,0,dynamic score top broker list row,2024-05-17 19:04:05,01bestca/02notrel/03notrel,,,,,,False,False
+5626382,77396644,togo,0,broker-name-link,2024-05-18 00:35:11,01counpg/02notrel/03notrel,,,,,,False,False
+5627370,77416651,malawi,1,top2-header,2024-05-18 03:55:47,01educat/02stocks/03buysto,,,,,,False,False
+5629405,77449753,malawi,1,dynamic score top broker list row,2024-05-18 09:30:23,01cateme/02notrel/03notrel,,,,,,False,False
+5629723,77453248,seychelles,0,broker-chapter-1/summary,2024-05-18 10:09:13,01bestca/02notrel/03notrel,,,,,,False,False
+5629734,77454029,malawi,1,dynamic score top broker list row,2024-05-18 10:11:03,01counpg/02notrel/03notrel,,,,,,False,False
+5629742,77452989,togo,1,broker-listpage-visit-broker-button,2024-05-18 10:12:18,01review/02notrel/03notrel,,,,,,False,False
+5629814,77453248,seychelles,0,dynamic score top broker list row,2024-05-18 10:22:45,01bestca/02notrel/03notrel,,,,,,False,False
+5630090,77458570,togo,1,mobile-chapter-2-top5-box,2024-05-18 10:53:14,01safety/02isscam/03notrel,,,,,,False,False
+5633056,73527073,iran,1,geo-alternatives-link,2024-05-18 16:28:03,01cateme/02notrel/03notrel,,,,,,False,False
+5633753,76283667,iran,1,popularity-box-whole-row-link,2024-05-18 18:10:52,01bestca/02forexx/03notrel,,,,,,False,False
+5634245,77507082,iran,0,,2024-05-18 19:24:22,01review/02notrel/03review,,,,,,False,False
+5634261,77507082,iran,0,,2024-05-18 19:27:24,01review/02notrel/03review,,,,,,False,False
+5634347,77512582,malawi,1,top2-header,2024-05-18 19:39:51,01educat/02stocks/03buysto,,,,,,False,False
+5634673,77516600,togo,1,mobile-chapter-2-top5-box,2024-05-18 20:15:29,01bestca/02notrel/03online,,,,,,False,False
+5634772,77515783,aruba,1,dynamic score top broker list row,2024-05-18 20:28:04,01bestca/02notrel/03notrel,,,,,,False,False
+5638320,77581725,iran,0,geo-alternatives-button,2024-05-19 09:03:32,01cateme/02notrel/03notrel,,,,,,False,False
+5639645,77318069,reunion,1,mobile-chapter-2-top5-box,2024-05-19 12:47:03,01safety/02isscam/03notrel,,,,,,False,False
+5642857,77673694,togo,1,fmb broker list item link,2024-05-19 22:01:46,01fmybro/02notrel/03notrel,,,,,,False,False
+5643747,77694292,reunion,1,fmb broker list item link,2024-05-20 01:18:14,01fmybro/02notrel/03notrel,,,,,,False,False
+5645816,76160056,togo,1,mobile-chapter-2-top5-box,2024-05-20 08:23:33,01safety/02isscam/03notrel,,,,,,False,False
+5646103,77742998,malawi,1,dynamic score top broker list row,2024-05-20 09:13:00,01counpg/02notrel/03notrel,,,,,,False,False
+5646796,77749991,american samoa,1,dynamic score top broker list row,2024-05-20 10:14:58,01cateme/02notrel/03notrel,,,,,,False,False
+5647341,77758398,togo,1,dynamic score top broker list row,2024-05-20 11:36:53,01bestca/02notrel/03online,,,,,,False,False
+5647342,77758398,togo,1,dynamic score top broker list row,2024-05-20 11:36:55,01bestca/02notrel/03online,,,,,,False,False
+5647345,77758398,togo,1,dynamic score top broker list row,2024-05-20 11:37:34,01bestca/02notrel/03online,,,,,,False,False
+5648617,77778413,togo,1,broker-name-link,2024-05-20 14:29:05,01bestca/02notrel/03online,,,,,,False,False
+5650876,77617442,cuba,1,mobile-chapter-6-top5-box,2024-05-20 19:17:48,01review/02notrel/03deposi,,,,,,False,False
+5651184,77814373,iran,0,top2-brokers-vb,2024-05-20 19:54:18,01compar/02brvsbr/03notrel,,,,,,False,False
+5651399,77814373,iran,0,broker-listpage-visit-broker-button,2024-05-20 20:27:02,01review/02notrel/03notrel,,,,,,False,False
+5652601,77837233,togo,0,dynamic score top broker list row,2024-05-20 23:45:03,01bestca/02notrel/03online,,,,,,False,False
+5652611,77837233,togo,0,broker-name-link,2024-05-20 23:45:04,01bestca/02notrel/03online,,,,,,False,False
+5652621,77837233,togo,0,mobile-chapter-2-top5-box,2024-05-20 23:45:05,01bestca/02notrel/03online,,,,,,False,False
+5652626,77837233,togo,0,interactive-param-table-name-link,2024-05-20 23:45:09,01bestca/02notrel/03online,,,,,,False,False
+5652636,77837233,togo,0,popularity-box-whole-row-link,2024-05-20 23:45:12,01bestca/02notrel/03online,,,,,,False,False
+5652646,77837233,togo,0,best-brokers-chapter-logo,2024-05-20 23:45:14,01bestca/02notrel/03online,,,,,,False,False
+5652647,77837233,togo,0,best-brokers-chapter-title,2024-05-20 23:45:14,01bestca/02notrel/03online,,,,,,False,False
+5652648,77837233,togo,0,broker-chapter-1/summary,2024-05-20 23:45:14,01bestca/02notrel/03online,,,,,,False,False
+5652676,77837233,togo,0,desktop-top5-box,2024-05-20 23:45:16,01bestca/02notrel/03online,,,,,,False,False
+5654363,74884557,malawi,1,mobile-chapter-2-top5-box,2024-05-21 04:16:52,01review/02notrel/03deposi,,,,,,False,False
+5655448,73796271,seychelles,1,dynamic score top broker list row,2024-05-21 07:26:59,01cateme/02notrel/03notrel,,,,,,False,False
+5655906,77889528,togo,0,fmb broker list item link,2024-05-21 08:40:27,01fmybro/02notrel/03notrel,,,,,,False,False
+5656649,77902446,malawi,1,fmb broker list item link,2024-05-21 10:48:39,01fmybro/02notrel/03notrel,,,,,,False,False
+5659967,77952326,togo,1,dynamic score top broker list row,2024-05-21 18:19:22,01cateme/02notrel/03notrel,,,,,,False,False
+5661656,77974744,togo,0,dynamic score top broker list row,2024-05-21 21:51:36,01bestca/02notrel/03notrel,,,,,,False,False
+5666739,78056165,malawi,1,dynamic score top broker list row,2024-05-22 11:38:24,01counpg/02notrel/03notrel,,,,,,False,False
+5668000,78075176,reunion,1,mobile-chapter-2-top5-box,2024-05-22 14:34:43,01safety/02isscam/03notrel,,,,,,False,False
+5671127,78124490,malawi,1,broker-name-link,2024-05-22 21:26:27,01educat/02stocks/03buysto,,,,,,False,False
+5672518,78123251,syria,1,dynamic score top broker list row,2024-05-23 02:15:02,01bestca/02notrel/03online,,,,,,False,False
+5674235,78182339,reunion,1,mobile-chapter-2-top5-box,2024-05-23 07:38:29,01safety/02isscam/03notrel,,,,,,False,False
+5682770,78383758,malawi,0,top2-brokers-vb,2024-05-24 08:25:27,01compar/02brvsbr/03notrel,,,,,,False,False
+5682987,78389998,iran,1,fmb broker list item link,2024-05-24 08:59:42,01fmybro/02notrel/03notrel,,,,,,False,False
+5685238,78441088,reunion,0,interactive-param-table-name-link,2024-05-24 16:08:14,01counpg/02notrel/03notrel,,,,,,False,False
+5686906,78477576,iran,1,mobile-chapter-2-top5-box,2024-05-24 20:37:41,01safety/02isscam/03notrel,,,,,,False,False
+5694773,78728737,malawi,1,popularity-box-whole-row-link,2024-05-26 00:29:02,01counpg/02notrel/03notrel,,,,,,False,False
+5696286,78793446,iran,0,broker-name-link,2024-05-26 08:17:32,01bestca/02notrel/03online,,,,,,False,False
+5697396,78849243,malawi,1,dynamic score top broker list row,2024-05-26 11:57:26,01counpg/02notrel/03notrel,,,,,,False,False
+5699713,78901677,iran,0,dynamic score top broker list row,2024-05-26 17:04:49,01counpg/02notrel/03notrel,,,,,,False,False
+5703102,79007824,malawi,1,broker-chapter-1/summary,2024-05-27 05:11:27,01cateme/02notrel/03notrel,,,,,,False,False
+5703586,78419097,malawi,1,mobile-chapter-2-top5-box,2024-05-27 07:12:03,01review/02notrel/03openac,,,,,,False,False
+5703612,79022043,togo,1,dynamic score top broker list row,2024-05-27 07:16:27,01bestca/02notrel/03online,,,,,,False,False
+5705448,79083084,syria,1,dynamic score top broker list row,2024-05-27 13:20:26,01bestca/02notrel/03online,,,,,,False,False
+5712527,79240595,seychelles,0,dynamic score top broker list row,2024-05-28 08:32:56,01counpg/02notrel/03notrel,,,,,,False,False
+5713335,79257161,malawi,0,broker-name-link,2024-05-28 10:43:31,01counpg/02notrel/03notrel,,,,,,False,False
+5717321,79351938,malawi,1,dynamic score top broker list row,2024-05-28 20:29:01,01counpg/02notrel/03notrel,,,,,,False,False
+5719859,79456870,malawi,1,mobile-chapter-6-top5-box,2024-05-29 05:53:31,01counpg/02notrel/03notrel,,,,,,False,False
+5721148,79521852,togo,1,mobile-chapter-2-top5-box,2024-05-29 09:15:12,01safety/02isscam/03notrel,,,,,,False,False
+5721689,79548685,malawi,1,dynamic score top broker list row,2024-05-29 10:48:38,01counpg/02notrel/03notrel,,,,,,False,False
+5722345,79572736,seychelles,1,dynamic score top broker list row,2024-05-29 12:20:07,01counpg/02notrel/03notrel,,,,,,False,False
+5722510,79577362,aruba,1,dynamic score top broker list row,2024-05-29 12:42:00,01counpg/02notrel/03notrel,,,,,,False,False
+5722674,79548685,malawi,1,cb broker cards visit broker button,2024-05-29 13:05:39,01compar/02notrel/03notrel,,,,,,False,False
+5724448,79635162,iran,0,top2-brokers-vb,2024-05-29 17:30:54,01compar/02brvsbr/03notrel,,,,,,False,False
+5725273,79635162,iran,0,dynamic score top broker list row,2024-05-29 19:26:04,01bestca/02notrel/03notrel,,,,,,False,False
+5725984,79037364,syria,1,fmb broker list item link,2024-05-29 21:00:33,01fmybro/02notrel/03notrel,,,,,,False,False
+5729957,79904642,togo,1,dynamic score top broker list row,2024-05-30 11:14:59,01cateme/02notrel/03notrel,,,,,,False,False
+5730452,79410433,togo,1,dynamic score top broker list row,2024-05-30 12:33:05,01counpg/02notrel/03notrel,,,,,,False,False
+5731833,79977128,togo,1,fmb broker list item link,2024-05-30 15:58:06,01fmybro/02notrel/03notrel,,,,,,False,False
+5731915,79980474,reunion,1,fmb broker list item link,2024-05-30 16:05:39,01fmybro/02notrel/03notrel,,,,,,False,False
+5732149,79987106,reunion,1,fmb broker list item link,2024-05-30 16:38:46,01fmybro/02notrel/03notrel,,,,,,False,False
+5733224,80021705,togo,1,mobile-chapter-2-top5-box,2024-05-30 19:24:55,01educat/02stocks/03buysto,,,,,,False,False
