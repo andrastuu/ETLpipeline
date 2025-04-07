@@ -157,11 +157,6 @@ brokerchooser-etl/
 
 This project delivers a modular, testable, and cloud-adaptable pipeline suitable for production with minimal adjustments. Each component is isolated for clarity, and the whole system is compatible with modern orchestration and CI/CD pipelines.
 
-**Next Steps:**
-- Optionally integrate with AWS Lambda for serverless triggers
-- Add CI to automatically run Pytest and DAG checks on commits
-- Monitor costs more granularly using CloudWatch if deployed on AWS
-
 ---
 
 **Author**: Andras Tuu 
