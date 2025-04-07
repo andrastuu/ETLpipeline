@@ -1,7 +1,7 @@
-# BrokerChooser ETL Pipeline
+#  ETL Pipeline
 
 ## 📌 Overview
-This project is a modular, cloud-ready **ETL pipeline** built for BrokerChooser as part of a data engineering assessment. The goal was to build a robust, scalable, and easily testable data pipeline that can unify internal user conversion data with broker data for more effective product analysis and decision-making.
+This project is a modular, cloud-ready **ETL pipeline** built as part of a data engineering assessment. The goal was to build a robust, scalable, and easily testable data pipeline that can unify internal user conversion data with broker data for more effective product analysis and decision-making.
 
 ---
 
