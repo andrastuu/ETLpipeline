@@ -24,7 +24,11 @@ def airflow_extract():
 # Wrapper for Airflow Transform Task
 def airflow_transform():
     datasets = extract(data_dir="/opt/airflow/data")
-    matched = transform(datasets["conversions"], datasets["broker_data"])
+    matched = transform(
+        datasets["conversions"],
+        datasets["broker_data"],
+        datasets["category_mapping"]
+    )
     matched.to_csv("/opt/airflow/output/matched_data.csv", index=False)
 
 # Wrapper for Airflow Load Task

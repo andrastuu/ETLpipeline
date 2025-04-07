@@ -54,7 +54,8 @@ def load_csv(
 def extract(
     data_dir: str = "data",
     conversion_pattern: str = "brokerchooser_conversions*.csv",
-    broker_file: str = "broker_data.csv"
+    broker_file: str = "broker_data.csv",
+    category_file: str = "page_category_mapping.csv"
 ) -> Dict[str, pd.DataFrame]:
     try:
         data_path = Path(data_dir)
@@ -68,17 +69,28 @@ def extract(
             load_csv(f, ";", parse_dates=["created_at"], name="Conversions")
             for f in conversions_files
         ], ignore_index=True)
-        validate_columns(conversions, ["created_at", "country_name"], "Conversions")
+        validate_columns(conversions, ["created_at", "country_name", "measurement_category"], "Conversions")
 
         # Load broker data (assumed comma-separated)
         broker_data_path = data_path / broker_file
         broker_data = load_csv(broker_data_path, ",", name="Broker Data")
         validate_columns(broker_data, ["timestamp", "ip_country"], "Broker Data")
 
+        # Load category mapping (semicolon-delimited), then save as comma-delimited
+        category_mapping_path = data_path / category_file
+        category_mapping = load_csv(category_mapping_path, ";", name="Category Mapping")
+        validate_columns(category_mapping, ["measurement_category", "page_category"], "Category Mapping")
+
+        # Save as comma-delimited for future use
+        comma_mapping_path = data_path / "page_category_mapping_comma.csv"
+        category_mapping.to_csv(comma_mapping_path, index=False)
+        logging.info(f"✅ Converted and saved category mapping to comma-delimited: {comma_mapping_path.name}")
+
         logging.info("📦 Data successfully extracted.")
         return {
             "conversions": conversions,
-            "broker_data": broker_data
+            "broker_data": broker_data,
+            "category_mapping": category_mapping
         }
 
     except Exception as e:
