@@ -33,7 +33,13 @@ This project is a modular, cloud-ready **ETL pipeline** built as part of a data 
 
 ### 2. **Transform**
 - Cleans and harmonizes country names using a YAML-based mapping.
-- Matches broker data to user conversions by timestamp proximity.
+- Matches broker data to user conversions using a combination of timestamp proximity and optional country filters.
+- The pipeline performs the following steps:
+  - For each user conversion, it identifies the closest broker record in time using absolute timestamp difference.
+  - Country harmonization ensures alignment between internal and external datasets.
+  - Matching can consider either country_name vs ip_country or country_residency depending on match quality.
+  - If no close match is found within a defined time window, the record is marked as "unmatched" and logged for diagnostics.
+- All transformations are validated against schema expectations using Pandera, and the logic is covered by Pytest to ensure edge cases are handled reliably.
 - Categorizes unmatched records and exports diagnostics for investigation.
 
 ### 3. **Load**
