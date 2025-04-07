@@ -1,0 +1,7 @@
+pandas
+pyyaml
+boto3
+python-dotenv
+ydata-profiling==4.1.2
+pytest
+pandera

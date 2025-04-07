@@ -1,0 +1,3 @@
+# Ignore sensitive env files
+etl/aws.env
+.env
