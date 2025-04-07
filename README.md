@@ -45,6 +45,9 @@ This project is a modular, cloud-ready **ETL pipeline** built as part of a data 
 ### 4. **Profile**
 - Uses YData Profiling to generate an interactive HTML report.
 - Helps quickly identify missing data, distributions, and correlation patterns.
+- The pipeline includes defensive programming practices and schema validation using Pandera to ensure data integrity.
+- Transformations are unit tested with Pytest, catching changes early.
+
 
 ---
 
@@ -79,23 +82,8 @@ When deployed using Amazon MWAA (Managed Airflow):
 | Hourly        | ~30 hours      | $60–100                               |
 | Event-based   | Varies         | Lower (with Lambda or Step Functions) |
 
-> If cost is a concern, consider moving smaller steps (e.g. load or profiling) to AWS Lambda functions or even AWS Glue jobs for more cost efficiency.
+> Disclaimer: Moving smaller steps (e.g. load or profiling) to AWS Lambda functions or even AWS Glue jobs can have better cost efficiency.
 
----
-
-## 🤔 Addressing Common Engineering Questions
-
-**Q1: What if the schema changes unexpectedly?**  
-The pipeline uses defensive programming and schema validation via Pytest. In production, Great Expectations or Pandera could be added to enforce schema contracts and flag drift.
-
-**Q2: Can this scale to millions of rows per day?**  
-Yes. The pipeline is modular, and all data operations can be rewritten using Dask or Spark if needed. The current batch pipeline handles mid-volume data comfortably.
-
-**Q3: What happens if a task fails?**  
-Airflow logs detailed tracebacks and supports retries, alerts, and SLA monitoring. Each task is wrapped in try/except for debugging. Email or Slack alerts can be easily added.
-
-**Q4: Is it secure to store AWS credentials in a file?**  
-For demo purposes, `aws.env` is used. In production, credentials should be injected securely via IAM roles, AWS Secrets Manager, or environment bindings in CI/CD.
 
 ---
 
